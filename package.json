@@ -1,0 +1,31 @@
+{
+  "name": "parabank-playwright-cucumber",
+  "version": "1.0.0",
+  "description": "Playwright TypeScript Cucumber Framework for Parabank",
+  "main": "index.js",
+  "scripts": {
+    "test": "HEADLESS=false cucumber-js",
+    "test:headed": "HEADLESS=false cucumber-js",
+    "test:headless": "HEADLESS=true cucumber-js",
+    "test:debug": "HEADLESS=false node --inspect-brk ./node_modules/.bin/cucumber-js",
+    "test:report": "HEADLESS=false cucumber-js --format html:./test-results/report.html",
+    "clean": "rm -rf test-results"
+  },
+  "keywords": [
+    "playwright",
+    "cucumber",
+    "typescript",
+    "bdd",
+    "testing"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.0.0",
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^20.10.0",
+    "dotenv": "^17.2.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
